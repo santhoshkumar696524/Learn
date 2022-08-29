@@ -1,0 +1,51 @@
+SPLIT() A STRING INTO A LIST
+
+txt = "welcome to the jungle"
+x = txt.split()		['welcome', 'to', 'the', 'jungle']
+
+txt = "hello, my name is Peter, I am 26 years old"
+x = txt.split(", ")
+print(x)			['hello', 'my name is Peter', 'I am 26 years old']
+
+txt = "apple#banana#cherry#orange"
+
+# SETTING THE MAXSPLIT TO 1, WILL RETURN A LIST WITH 2 ELEMENTS!
+x = txt.split("#", 1)
+print(x)
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+JOIN()
+Join all items in a tuple into a string, using a space/any character as separator
+
+myTuple = ("John", "Peter", "Vicky")
+x = " ".join(myTuple)
+print(x)	John Peter Vicky
+
+
+myDict = {"name": "John", "country": "Norway"}
+mySeparator = "#"
+x = mySeparator.join(myDict)	name#country
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+index():
+The index() method is almost the same as the find() method, the only difference is that the find() method returns -1 if the value is not found.
+
+1st Occurence
+txt = "Hello, welcome to my world."
+x = txt.index("e")	1
+
+1st Occurence from 5 to 8
+txt = "Hello, welcome to my worlEwed."
+x = txt.index("e", 5, 10)	8
+
+STRING
+txt = "Hello, welcome to my world."
+x = txt.index("welcome")	7
+
+
+EXCEPTION:
+txt = "Hello, welcome to my world."
+
+print(txt.find("q"))
+print(txt.index("q"))
+
+-1
+ValueError: substring not found

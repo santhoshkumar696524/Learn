@@ -1,0 +1,13 @@
+#convert from int to float:
+x = float(1)
+
+#convert from float to int:
+y = int(2.8)
+
+#convert from int to complex:
+z = complex(1)
+
+To display a random number between 1 and 9:
+
+import random
+print(random.randrange(1, 10))

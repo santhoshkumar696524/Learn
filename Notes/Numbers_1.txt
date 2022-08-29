@@ -1,0 +1,17 @@
+Integers:
+
+int
+1
+
+float
+x = 1.10
+y = 1.0
+z = -35.59
+z = +35.59
+z = -87.7e100----->e/E comes under float. Rest are complex
+
+Complex
+x = 3+5j
+y = 5j
+z = -5j
+
